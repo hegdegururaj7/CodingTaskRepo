@@ -1,0 +1,10 @@
+<div class="movies-search-container">
+    <div class="movies-result">
+<app-search style="display:inline-block" (searchEnteredEvent)="onSearch($event)"></app-search>
+<div class="movies-search-results-container">
+    <div class="movies-search-results-table">
+<app-search-results style="display:inline-block" [dataSource]="searchResults"></app-search-results>
+    </div>
+</div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+:host{
+    width: 100%;
+
+    .movies-search-results-container{
+        margin: 1.5em 3.125em 10em 0em;
+        width: 100%;
+        
+        .movies-search-results-table{
+            width: 100%;
+        }
+    }
+
+    .movies-result{
+        width: 100%;
+    }
+    .movies-search-container{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1%;
+        transition: all .3s linear;
+        align-items: center;
+        display: flex;
+        margin-left: 25em;
+    }
+}
