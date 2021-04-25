@@ -1,19 +1,11 @@
 <form [formGroup]="movieSearch">
     <div class="movie-search-input">
-        <mat-form-field>
-            <mat-icon >search</mat-icon>
-            <input matInput  type="search" (keyupenter) =
-            (input)="search?.controls.title" [matAutocomplete]="searchAuto"
+        <mat-form-field style="width:auto !important"  appearance="outline">
+            <input matInput  type="search" placeholder="Enter a Title" 
+            (input)="search?.controls.title"
              formControlName="title"
                 autoFocus>
-            <mat-autocomplete #searchAuto="matAutocomplete">
-                <mat-option matTooltip="{{item}}" *ngFor="let item of this.retrievedMoviesSearch" [value]="item" (click)="onClick(item)">
-                    {{item}}
-                </mat-option>
-                <mat-option *ngIf="this.retrievedMoviesSearch?.length === 0">
-                    No results for search
-                </mat-option>
-            </mat-autocomplete>
+                <mat-icon style="margin-left: 26em; position: sticky;" >search</mat-icon>
         </mat-form-field>
     </div>
 </form>

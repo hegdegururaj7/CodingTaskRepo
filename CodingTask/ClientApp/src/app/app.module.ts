@@ -39,6 +39,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
      HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     FormsModule,
+    MatMenuModule,
     MatIconModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -51,7 +52,6 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     MatOptionModule,
     MatSelectModule,
     MatTooltipModule,
-    MatMenuModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
