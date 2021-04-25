@@ -1,0 +1,29 @@
+
+:host{
+    width: 55%;
+
+.mat-form-field{
+    width: 100%;  
+    input {
+        color: mat-color(red,700)
+    }
+}
+ .mat-form-field{
+     width: 100%;
+     input{
+         font-size: 1rem;
+     }
+ }
+}
+:ng-deep .mat-option{
+    line-height: 20px !important;
+}
+:ng-deep .mat-form-field-infix{
+    width: 355px !important;
+}
+:ng-deep .material-icons{
+    line-height: 20px !important;
+}
+:ng-deep .mat-tooltip{
+    white-space: pre-wrap !important;
+}
