@@ -1,0 +1,46 @@
+<form [formGroup]="detailsFormGroup">
+    <section class="movie-detail-container">
+        <div class="movie-detail-input">
+            <mat-label><b>Language</b></mat-label>
+            <mat-form-field class="mat-form-field-readonly">
+                <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.language">
+            </mat-form-field>
+            <mat-label><b>Location</b></mat-label>
+            <mat-form-field class="mat-form-field-readonly">
+                <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.location">
+            </mat-form-field>
+            <mat-label><b>Plot</b></mat-label>
+            <textarea style ="width:73em" [disabled]= "true">{{this.detailsFormGroup?.value.plot}}</textarea>
+            <ng-container>
+                <mat-label><b>Poster</b></mat-label>
+                <img src={{this.detailsFormGroup.value.poster}} style="height:130px ; width:180px">
+            </ng-container>
+
+            <mat-form-field>
+                            <mat-label><b>SoundEffects</b></mat-label>
+
+                <input style ="margin:-1em"  matInput [readonly]="true" [value]="this.detailsFormGroup?.value.soundEffects">
+            </mat-form-field>
+            <ng-container>
+                <mat-label><b>Stills</b></mat-label>
+                <img src={{this.detailsFormGroup.value.stills}}>
+                </ng-container>
+                    <mat-label style ="padding:7em" >Title</mat-label>
+
+                    <mat-form-field class="mat-form-field-readonly">
+                        <input  matInput [readonly]="true" [value]="this.detailsFormGroup?.value.title">
+                    </mat-form-field>
+                    <mat-label><b>ImdbId</b></mat-label>
+
+                    <mat-form-field class="mat-form-field-readonly">
+                        <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.imdbId">
+                    </mat-form-field>
+                    <mat-label><b>ListingType</b></mat-label>
+
+                    <mat-form-field class="mat-form-field-readonly">
+                        <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.listingType">
+                    </mat-form-field>
+                    <mat-form-field class="mat-form-field-readonly">
+                        <mat-label><b>>mbd Rating</b>/mat-label>
+                        <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.imbdRating">
+                    </mat-form-field>

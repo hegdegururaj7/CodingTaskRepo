@@ -19,11 +19,25 @@ export class MoviesService{
         const parameters={
 titleTerm: terms
         };
+const movieConstant ='Movies';
 const searchUrlConstants ='Search';
-    return this.httpClient.get<GetMoviesResponse>(this.baseResourceUrl + searchUrlConstants,  {params:parameters}).
+let command = null;
+if(terms === '' || !terms){
+     command = (this.baseResourceUrl + movieConstant);
+     return this.httpClient.get<GetMoviesResponse>(command).
     pipe(map((result :GetMoviesResponse) => 
     result.movies.map(movie => this.getMoviesResponseAdapter.map(movie)),
     catchError (ex => throwError(ex))
     ));
+}
+else{
+     command = (this.baseResourceUrl + searchUrlConstants);
+     return this.httpClient.get<GetMoviesResponse>(command, {params:parameters}).
+    pipe(map((result :GetMoviesResponse) => 
+    result.movies.map(movie => this.getMoviesResponseAdapter.map(movie)),
+    catchError (ex => throwError(ex))
+    ));
+}
+    
   }
 }

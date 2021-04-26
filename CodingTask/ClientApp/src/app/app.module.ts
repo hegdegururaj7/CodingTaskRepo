@@ -24,6 +24,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatMenuModule } from "@angular/material/menu";
 import { GetMoviesResponseAdapter } from "src/app/adapters/movies.get.adapter";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { DetailsComponent } from "src/app/details/details.component";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     CounterComponent,
     FetchDataComponent,
     SearchComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    DetailsComponent
   ],
   imports: [
      HttpClientModule,
@@ -55,8 +57,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'details', component: DetailsComponent },
+      { path: 'details/:id', component: DetailsComponent },
     ])
   ],
   providers: [MoviesService,GetMoviesResponseAdapter],

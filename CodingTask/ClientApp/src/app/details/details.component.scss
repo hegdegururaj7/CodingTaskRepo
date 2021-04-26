@@ -1,0 +1,24 @@
+@import "~@angular/material/_theming.scss";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.movie-detail-container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    margin:1em 5em 0 0;
+    .mat-form-field{
+        margin: 0 0 1.5em 0;
+        font-size: 14px;
+    }
+
+.movie-detail-input{
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+
+    .mat-form-field{
+        margin-right: 30px;
+        width: 100%
+    }
+}
+}
