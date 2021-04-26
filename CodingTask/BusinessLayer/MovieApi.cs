@@ -18,6 +18,8 @@ namespace CodingTask.BusinessLayer
         }
         public MovieResponse[] Search(string term)
         {
+            if (string.IsNullOrWhiteSpace(_movieMetaData.movieList))
+                return null;
             GetMoviesResponse getMoviesResponse = new GetMoviesResponse();
             var jsonString = System.IO.File.ReadAllText(_movieMetaData.movieList);
             var movieObject = JsonConvert.DeserializeObject<GetMoviesResponse>(jsonString);
