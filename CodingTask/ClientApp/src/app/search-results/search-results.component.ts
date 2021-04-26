@@ -36,13 +36,15 @@ switch(sort.active){
     case 'title': return this.compareData(a.title ,b.title,isDesc);
     case 'imdbId': return this.compareData(a.imdbId ,b.imdbId,isDesc);
     case 'listingType': return this.compareData(a.listingType ,b.listingType,isDesc);
-    case 'imbRating': return this.compareData(a.imbRating ,b.imbRating,isDesc);
+    case 'imbdRating': return this.compareData(a.imbdRating ,b.imbdRating,isDesc);
     case 'plot': return this.compareData(a.plot ,b.plot,isDesc);
+    case 'soundEffects': return this.compareData(a.plot ,b.plot,isDesc);
+
 }
        });
     }
 
-    private compareData(firstValue: string, secondValue: string, isDesc: Boolean) :  number{
+    private compareData(firstValue: string|string[], secondValue: string|string[], isDesc: Boolean) :  number{
         return (firstValue < secondValue ? 1 : -1) * (isDesc ? -1: 1);
     }
 }

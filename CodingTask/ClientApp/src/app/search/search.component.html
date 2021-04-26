@@ -1,11 +1,11 @@
 <form [formGroup]="movieSearch">
     <div class="movie-search-input">
-        <mat-form-field style="width:auto !important"  appearance="outline">
+        <mat-form-field style="width:auto !important; padding-top:3%;"  appearance="outline">
             <input matInput  type="search" placeholder="Enter a Title" 
             (input)="search?.controls.title"
              formControlName="title"
                 autoFocus>
-                <mat-icon style="margin-left: 26em; position: sticky;" >search</mat-icon>
+                <mat-icon style="margin-left: 7em; position: sticky;" >search</mat-icon>
         </mat-form-field>
     </div>
 </form>
