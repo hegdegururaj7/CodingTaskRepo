@@ -26,6 +26,6 @@ namespace CodingTask.ResponseModels
 
         public string ListingType { get; set; }
 
-        public string ImbRating { get; set; }
+        public string ImbdRating { get; set; }
     }
 }

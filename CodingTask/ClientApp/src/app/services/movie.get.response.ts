@@ -16,5 +16,5 @@ export interface MovieResponse {
 
     listingType: string;
 
-    imbRating: string;
+    imbdRating: string;
 }

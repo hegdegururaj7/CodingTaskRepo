@@ -17,6 +17,6 @@ export class Movie {
 
         public listingType: string,
 
-        public imbRating: string,
+        public imbdRating: string,
     ) { }
 }
