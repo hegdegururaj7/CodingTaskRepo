@@ -1,3 +1,7 @@
+<div class="movies-slicer-container">
+    <app-slicers [languages]="this.filteredLanguages" (languagesSlicer)="onFilter($event)">
+    </app-slicers>
+</div>
 <div class="movies-search-container">
     <div class="movies-result">
 <app-search style="display:inline-block" (searchEnteredEvent)="onSearch($event)"></app-search>

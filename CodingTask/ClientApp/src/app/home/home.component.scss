@@ -9,6 +9,10 @@
             width: 100%;
         }
     }
+movies-slicer-container{
+    float: left;
+    margin-left: 1em;
+}   
     .movies-search-container{
         flex-direction: column;
         justify-content: center;
