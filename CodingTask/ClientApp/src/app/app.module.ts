@@ -7,8 +7,6 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { SearchComponent } from "src/app/search/search.component";
 import { SearchResultsComponent } from "src/app/search-results/search-results.component";
 import { MoviesService } from "src/app/services/movies.service";
@@ -31,8 +29,6 @@ import { DetailsComponent } from "src/app/details/details.component";
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     SearchComponent,
     SearchResultsComponent,
     DetailsComponent
