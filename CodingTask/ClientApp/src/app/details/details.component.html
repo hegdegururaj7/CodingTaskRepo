@@ -1,29 +1,29 @@
 <form [formGroup]="detailsFormGroup">
     <section class="movie-detail-container">
         <div class="movie-detail-input">
-            <mat-label><b>Language</b></mat-label>
+            <mat-label><b>Language:</b></mat-label>
             <mat-form-field class="mat-form-field-readonly">
                 <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.language">
             </mat-form-field>
-            <mat-label><b>Location</b></mat-label>
+            <mat-label><b>Location;</b></mat-label>
             <mat-form-field class="mat-form-field-readonly">
                 <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.location">
             </mat-form-field>
-            <mat-label><b>Plot</b></mat-label>
+            <mat-label><b>Plot:</b></mat-label>
             <textarea style="width:73em" [disabled]="true">{{this.detailsFormGroup?.value.plot}}</textarea>
             <ng-container>
-                <mat-label><b>Poster</b></mat-label>
+                <mat-label><b>Poster:</b></mat-label>
                 <img src={{this.detailsFormGroup.value.poster}} style="height:130px ; width:180px">
             </ng-container>
 
 
             <mat-form-field>
-                <mat-label><b>SoundEffects</b></mat-label>
+                <mat-label><b>SoundEffects:</b></mat-label>
 
                 <input style="margin:-1em; padding:2em; padding-top:2em;" matInput [readonly]="true" [value]="this.detailsFormGroup?.value.soundEffects">
             </mat-form-field>
             <ng-container>
-                <mat-label><b>Stills</b></mat-label>
+                <mat-label><b>Stills:</b></mat-label>
                 <mat-grid-list cols="3" rowHeight="2:1">
                     <mat-grid-tile *ngFor='let i of this.detailsFormGroup?.value.stills'>
                         <img [src]='i' class="tile-image">
@@ -35,17 +35,17 @@
             <mat-form-field class="mat-form-field-readonly">
                 <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.title">
             </mat-form-field>
-            <mat-label><b>ImdbId</b></mat-label>
+            <mat-label><b>ImdbId:</b></mat-label>
 
             <mat-form-field class="mat-form-field-readonly">
                 <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.imdbId">
             </mat-form-field>
-            <mat-label><b>ListingType</b></mat-label>
+            <mat-label><b>ListingType:</b></mat-label>
 
             <mat-form-field class="mat-form-field-readonly">
                 <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.listingType">
             </mat-form-field>
-            <mat-label><b>Imbd Rating</b></mat-label>
+            <mat-label><b>Imdb Rating:</b></mat-label>
 
             <mat-form-field class="mat-form-field-readonly">
                 <input matInput [readonly]="true" [value]="this.detailsFormGroup?.value.imbdRating">

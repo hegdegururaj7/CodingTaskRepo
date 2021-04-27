@@ -11,7 +11,7 @@ import { Route, Router } from "@angular/router";
 export class SearchResultsComponent implements OnInit {
     @Input('dataSource') searchResults: Movie[];
     displayedColumns: string[] = ['language', 'location', 'plot', 'poster',
-        'soundEffects', 'stills', 'title', 'imdbId', 'listingType', 'imbRating', 'options']
+        'soundEffects', 'stills', 'title', 'imdbId', 'listingType', 'imdbRating', 'options']
 
     dataSource: MatTableDataSource<Movie>;
     @ViewChild(MatSort, { static: false }) sort: MatSort;
@@ -38,7 +38,7 @@ export class SearchResultsComponent implements OnInit {
                 case 'title': return this.compareData(a.title, b.title, isDesc);
                 case 'imdbId': return this.compareData(a.imdbId, b.imdbId, isDesc);
                 case 'listingType': return this.compareData(a.listingType, b.listingType, isDesc);
-                case 'imbdRating': return this.compareData(a.imbdRating, b.imbdRating, isDesc);
+                case 'imdbRating': return this.compareData(a.imbdRating, b.imbdRating, isDesc);
                 case 'plot': return this.compareData(a.plot, b.plot, isDesc);
                 case 'soundEffects': return this.compareData(a.plot, b.plot, isDesc);
 
