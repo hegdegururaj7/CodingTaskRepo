@@ -32,7 +32,7 @@ namespace CodingTask.Tests.BusinessLayer
             var stills = new string[]{
                 "some stills", "next stills"
             }; 
-            const string imbdRating = "12345";
+            const string imdbRating = "12345";
             const string imbdId = "78990";
             const string listingType = "1234";
 
@@ -46,7 +46,7 @@ namespace CodingTask.Tests.BusinessLayer
                 Poster = poster,
                 SoundEffects = soundEffects,
                 Stills = stills,
-                ImbdRating = imbdRating,
+                ImdbRating = imdbRating,
                 ImdbId = imbdId,
                 ListingType = listingType
 

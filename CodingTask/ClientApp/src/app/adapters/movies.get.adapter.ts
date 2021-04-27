@@ -20,7 +20,7 @@ item.stills,
 item.title,
 item.imdbId,
 item.listingType,
-item.imbdRating
+item.imdbRating,
      )
     }
 }

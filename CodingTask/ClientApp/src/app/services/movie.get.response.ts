@@ -14,7 +14,8 @@ export interface MovieResponse {
 
     imdbId: string;
 
+
     listingType: string;
 
-    imbdRating: string;
+    imdbRating: string;
 }

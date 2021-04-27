@@ -20,7 +20,7 @@ namespace CodingTask.BusinessLayer
                 Poster = movie.Poster,
                 SoundEffects = movie.SoundEffects,
                 Stills = movie.Stills,
-                ImbdRating =movie.ImbdRating,
+                ImbdRating =movie.ImdbRating,
                 ImdbId = movie.ImdbId,
                 ListingType = movie.ListingType
             };
