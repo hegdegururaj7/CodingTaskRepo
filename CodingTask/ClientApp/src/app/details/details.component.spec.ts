@@ -43,7 +43,7 @@ describe('DetailsComponent', () => {
 
                 MatTooltipModule
             ],
-            declarations: [SearchComponent],
+            declarations: [DetailsComponent],
             providers: [
                 {
                     provide: ActivatedRoute,
