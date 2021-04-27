@@ -1,0 +1,12 @@
+<mat-accordion>
+    <mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            Language
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-selection-list #language (selectionChange)='onLanguageSelection($event,language.selectedOptions)'>
+        <mat-list-option *ngFor="let item of languages" value ={{item}}>{{item}}</mat-list-option>
+    </mat-selection-list>
+    </mat-expansion-panel>
+</mat-accordion>
