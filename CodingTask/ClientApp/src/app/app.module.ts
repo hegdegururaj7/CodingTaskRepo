@@ -23,6 +23,11 @@ import { MatMenuModule } from "@angular/material/menu";
 import { GetMoviesResponseAdapter } from "src/app/adapters/movies.get.adapter";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { DetailsComponent } from "src/app/details/details.component";
+import { SlicersComponent } from "src/app/slicers/slicers.component";
+import { MatExpansionModule } from "@angular/material/expansion";
+import { MatListModule } from "@angular/material/list";
+import { MatGridListModule } from "@angular/material/grid-list";
+
 
 @NgModule({
   declarations: [
@@ -31,7 +36,8 @@ import { DetailsComponent } from "src/app/details/details.component";
     HomeComponent,
     SearchComponent,
     SearchResultsComponent,
-    DetailsComponent
+    DetailsComponent,
+    SlicersComponent
   ],
   imports: [
      HttpClientModule,
@@ -50,6 +56,9 @@ import { DetailsComponent } from "src/app/details/details.component";
     MatOptionModule,
     MatSelectModule,
     MatTooltipModule,
+    MatExpansionModule,
+    MatListModule,
+    MatGridListModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
