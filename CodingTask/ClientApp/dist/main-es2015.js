@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form [formGroup]=\"detailsFormGroup\">\r\n    <section class=\"movie-detail-container\">\r\n        <div class=\"movie-detail-input\">\r\n            <mat-label><b>Language</b></mat-label>\r\n            <mat-form-field class=\"mat-form-field-readonly\">\r\n                <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.language\">\r\n            </mat-form-field>\r\n            <mat-label><b>Location</b></mat-label>\r\n            <mat-form-field class=\"mat-form-field-readonly\">\r\n                <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.location\">\r\n            </mat-form-field>\r\n            <mat-label><b>Plot</b></mat-label>\r\n            <textarea style =\"width:73em\" [disabled]= \"true\">{{this.detailsFormGroup?.value.plot}}</textarea>\r\n            <ng-container>\r\n                <mat-label><b>Poster</b></mat-label>\r\n                <img src={{this.detailsFormGroup.value.poster}} style=\"height:130px ; width:180px\">\r\n            </ng-container>\r\n\r\n            <mat-form-field>\r\n                            <mat-label><b>SoundEffects</b></mat-label>\r\n\r\n                <input style =\"margin:-1em\"  matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.soundEffects\">\r\n            </mat-form-field>\r\n            <ng-container>\r\n                <mat-label><b>Stills</b></mat-label>\r\n                <img src={{this.detailsFormGroup.value.stills}}>\r\n                </ng-container>\r\n                    <mat-label style =\"padding:7em\" >Title</mat-label>\r\n\r\n                    <mat-form-field class=\"mat-form-field-readonly\">\r\n                        <input  matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.title\">\r\n                    </mat-form-field>\r\n                    <mat-label><b>ImdbId</b></mat-label>\r\n\r\n                    <mat-form-field class=\"mat-form-field-readonly\">\r\n                        <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.imdbId\">\r\n                    </mat-form-field>\r\n                    <mat-label><b>ListingType</b></mat-label>\r\n\r\n                    <mat-form-field class=\"mat-form-field-readonly\">\r\n                        <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.listingType\">\r\n                    </mat-form-field>\r\n                    <mat-form-field class=\"mat-form-field-readonly\">\r\n                        <mat-label><b>Imbd Rating</b></mat-label>\r\n                        <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.imbdRating\">\r\n                    </mat-form-field>");
+/* harmony default export */ __webpack_exports__["default"] = ("<form [formGroup]=\"detailsFormGroup\">\r\n    <section class=\"movie-detail-container\">\r\n        <div class=\"movie-detail-input\">\r\n            <mat-label><b>Language:</b></mat-label>\r\n            <mat-form-field class=\"mat-form-field-readonly\">\r\n                <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.language\">\r\n            </mat-form-field>\r\n            <mat-label><b>Location;</b></mat-label>\r\n            <mat-form-field class=\"mat-form-field-readonly\">\r\n                <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.location\">\r\n            </mat-form-field>\r\n            <mat-label><b>Plot:</b></mat-label>\r\n            <textarea style=\"width:73em\" [disabled]=\"true\">{{this.detailsFormGroup?.value.plot}}</textarea>\r\n            <ng-container>\r\n                <mat-label><b>Poster:</b></mat-label>\r\n                <img src={{this.detailsFormGroup.value.poster}} style=\"height:130px ; width:180px\">\r\n            </ng-container>\r\n\r\n\r\n            <mat-form-field>\r\n                <mat-label><b>SoundEffects:</b></mat-label>\r\n\r\n                <input style=\"margin:-1em; padding:2em; padding-top:2em;\" matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.soundEffects\">\r\n            </mat-form-field>\r\n            <ng-container>\r\n                <mat-label><b>Stills:</b></mat-label>\r\n                <mat-grid-list cols=\"3\" rowHeight=\"2:1\">\r\n                    <mat-grid-tile *ngFor='let i of this.detailsFormGroup?.value.stills'>\r\n                        <img [src]='i' class=\"tile-image\">\r\n                    </mat-grid-tile>\r\n                </mat-grid-list>\r\n            </ng-container>\r\n            <mat-label style=\"padding:7em\"><b>Title</b></mat-label>\r\n\r\n            <mat-form-field class=\"mat-form-field-readonly\">\r\n                <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.title\">\r\n            </mat-form-field>\r\n            <mat-label><b>ImdbId:</b></mat-label>\r\n\r\n            <mat-form-field class=\"mat-form-field-readonly\">\r\n                <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.imdbId\">\r\n            </mat-form-field>\r\n            <mat-label><b>ListingType:</b></mat-label>\r\n\r\n            <mat-form-field class=\"mat-form-field-readonly\">\r\n                <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.listingType\">\r\n            </mat-form-field>\r\n            <mat-label><b>Imdb Rating:</b></mat-label>\r\n\r\n            <mat-form-field class=\"mat-form-field-readonly\">\r\n                <input matInput [readonly]=\"true\" [value]=\"this.detailsFormGroup?.value.imbdRating\">\r\n            </mat-form-field>");
 
 /***/ }),
 
@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"movies-search-container\">\r\n    <div class=\"movies-result\">\r\n<app-search style=\"display:inline-block\" (searchEnteredEvent)=\"onSearch($event)\"></app-search>\r\n<div class=\"movies-search-results-container\">\r\n    <div class=\"movies-search-results-table\">\r\n<app-search-results  [dataSource]=\"searchResults\"></app-search-results>\r\n    </div>\r\n</div>\r\n    </div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"movies-slicer-container\">\r\n    <app-slicers [languages]=\"this.filteredLanguages\" (languagesSlicer)=\"onFilter($event)\">\r\n    </app-slicers>\r\n</div>\r\n<div class=\"movies-search-container\">\r\n    <div class=\"movies-result\">\r\n<app-search style=\"display:inline-block\" (searchEnteredEvent)=\"onSearch($event)\"></app-search>\r\n<div class=\"movies-search-results-container\">\r\n    <div class=\"movies-search-results-table\">\r\n<app-search-results  [dataSource]=\"searchResults\"></app-search-results>\r\n    </div>\r\n</div>\r\n    </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -61,7 +61,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n    <div>\r\n        <table class=\"mat-elevation-z8\" mat-table [dataSource]=\"dataSource\" matSort \r\n        (matSortChange)=\"sortData($event)\"   id=\"testTable\"\r\n         *ngIf=\"dataSource.data != null && dataSource.data.length > 0 ; else noData\">\r\n            <ng-container matColumnDef=\"language\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span>Language</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">{{result.language}}</td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"location\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span>Location</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">{{result.location}}</td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"plot\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span>Plot</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">\r\n                    <textarea>{{result.plot}}</textarea></td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"poster\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span>Poster</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">\r\n                      <img src=\"{{result.poster}}\" style=\"height:130px ; width:180px\">\r\n                    </td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"soundEffects\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span style=\"width:94px\">Sound Effects</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">{{result.soundEffects}}</td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"stills\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span>Stills</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">\r\n                 <img src=\"{{result.stills}}\" style=\"height:130px ; width:180px\">\r\n                </td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"title\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span style=\"width:97px\">Title</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">{{result.title}}</td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"imdbId\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span style=\"width:57px\">ImdbId</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">{{result.imdbId}}</td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"listingType\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span>Listing Type</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">{{result.listingType}}</td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"imbRating\">\r\n                <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                    <span>Imbd Rating</span>\r\n                </th>\r\n                <td mat-cell *matCellDef=\"let result\">{{result.imbdRating}}</td>\r\n            </ng-container>\r\n\r\n            <ng-container matColumnDef=\"options\">\r\n                <th mat-header-cell *matHeaderCellDef ></th>\r\n                <td mat-cell class=\"option-cell\" *matCellDef=\"let row , let i=index\">\r\n                    <a >\r\n                        <span class=\"search-navigation\" (click)=\"OnViewDetails(row)\" placeholder=\"View Details\" >View Details</span>\r\n                    </a>\r\n                </td>\r\n            </ng-container>\r\n            <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n            <tr mat-header-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n\r\n        </table>\r\n    </div>\r\n    <ng-template #noData>\r\n        <h4 style=\"text-align:center;\">No Movies Available</h4>\r\n    </ng-template>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\r\n    <table class=\"mat-elevation-z8\" mat-table [dataSource]=\"dataSource\" matSort (matSortChange)=\"sortData($event)\" id=\"testTable\"\r\n        *ngIf=\"dataSource.data != null && dataSource.data.length > 0 ; else noData\">\r\n        <ng-container matColumnDef=\"language\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span>Language</span>\r\n            </th>\r\n            <td mat-cell *matCellDef=\"let result\">{{result.language}}</td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"location\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span>Location</span>\r\n            </th>\r\n            <td mat-cell *matCellDef=\"let result\">{{result.location}}</td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"plot\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span>Plot</span>\r\n            </th>\r\n            <td mat-cell *matCellDef=\"let result\">\r\n                <textarea>{{result.plot}}</textarea></td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"poster\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span>Poster</span>\r\n            </th>\r\n            <td mat-cell *matCellDef=\"let result\">\r\n                <img src=\"{{result.poster}}\" style=\"height:130px ; width:180px\">\r\n            </td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"soundEffects\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span style=\"width:94px\">Sound Effects</span>\r\n            </th>\r\n            <td mat-cell *matCellDef=\"let result\">{{result.soundEffects}}</td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"stills\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span>Stills</span>\r\n            </th>\r\n            <td mat-cell  *matCellDef=\"let result\">\r\n                <mat-grid-list style=\"width:318px\" cols=\"3\" rowHeight=\"2:1\">\r\n                    <mat-grid-tile *ngFor='let i of result.stills'>\r\n                        <img  [src]='i' class=\"tile-image\">\r\n                    </mat-grid-tile>\r\n                </mat-grid-list>\r\n            </td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"title\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span style=\"width:97px\">Title</span>\r\n            </th>\r\n            <td mat-cell *matCellDef=\"let result\">{{result.title}}</td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"imdbId\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span style=\"width:57px\">ImdbId</span>\r\n            </th>\r\n            <td mat-cell *matCellDef=\"let result\">{{result.imdbId}}</td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"listingType\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span>Listing Type</span>\r\n            </th>\r\n            <td mat-cell style=\"font-size:10.5px\" *matCellDef=\"let result\">{{result.listingType}}</td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"imdbRating\">\r\n            <th mat-header-cell *matHeaderCellDef mat-sort-header>\r\n                <span>Imdb Rating</span>\r\n            </th>\r\n            <td mat-cell *matCellDef=\"let result\">{{result.imbdRating}}</td>\r\n        </ng-container>\r\n\r\n        <ng-container matColumnDef=\"options\">\r\n            <th mat-header-cell *matHeaderCellDef></th>\r\n            <td mat-cell class=\"option-cell\" *matCellDef=\"let row , let i=index\">\r\n                <a>\r\n                        <span class=\"search-navigation\" (click)=\"OnViewDetails(row)\" placeholder=\"View Details\" >View Details</span>\r\n                    </a>\r\n            </td>\r\n        </ng-container>\r\n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\r\n        <tr mat-header-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\r\n\r\n    </table>\r\n</div>\r\n<ng-template #noData>\r\n    <h4 style=\"text-align:center;\">No Movies Available</h4>\r\n</ng-template>");
 
 /***/ }),
 
@@ -74,7 +74,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<form [formGroup]=\"movieSearch\">\r\n    <div class=\"movie-search-input\">\r\n        <mat-form-field style=\"width:auto !important; padding-top:3%;\"  appearance=\"outline\">\r\n            <input matInput  type=\"search\" placeholder=\"Enter a Title\" \r\n            (input)=\"search?.controls.title\"\r\n             formControlName=\"title\"\r\n                autoFocus>\r\n                <mat-icon style=\"margin-left: 7em; position: sticky;\" >search</mat-icon>\r\n        </mat-form-field>\r\n    </div>\r\n</form>");
+/* harmony default export */ __webpack_exports__["default"] = ("<form [formGroup]=\"movieSearch\">\r\n    <div class=\"movie-search-input\">\r\n        <mat-form-field style=\"width:auto !important; padding-top:3%;\"  appearance=\"outline\">\r\n            <input matInput style=\"padding-top:1em\"  type=\"search\" placeholder=\"Type In Title\" \r\n            (input)=\"search?.controls.title\"\r\n             formControlName=\"title\"\r\n                autoFocus>\r\n                <mat-icon style=\"margin-left: 7em; position: sticky;\" >search</mat-icon>\r\n        </mat-form-field>\r\n    </div>\r\n</form>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/slicers/slicers.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/slicers/slicers.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-accordion>\r\n    <mat-expansion-panel>\r\n    <mat-expansion-panel-header>\r\n        <mat-panel-title>\r\n            Language\r\n        </mat-panel-title>\r\n    </mat-expansion-panel-header>\r\n    <mat-selection-list #language (selectionChange)='onLanguageSelection($event,language.selectedOptions)'>\r\n        <mat-list-option *ngFor=\"let item of languages\" value ={{item}}>{{item}}</mat-list-option>\r\n    </mat-selection-list>\r\n    </mat-expansion-panel>\r\n</mat-accordion>");
 
 /***/ }),
 
@@ -210,6 +223,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_adapters_movies_get_adapter__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! src/app/adapters/movies.get.adapter */ "./src/app/adapters/movies.get.adapter.ts");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
 /* harmony import */ var src_app_details_details_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! src/app/details/details.component */ "./src/app/details/details.component.ts");
+/* harmony import */ var src_app_slicers_slicers_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! src/app/slicers/slicers.component */ "./src/app/slicers/slicers.component.ts");
+/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm2015/expansion.js");
+/* harmony import */ var _angular_material_list__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/material/list */ "./node_modules/@angular/material/esm2015/list.js");
+/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm2015/grid-list.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -219,6 +236,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+
+
+
+
 
 
 
@@ -253,7 +274,8 @@ AppModule = __decorate([
             _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
             src_app_search_search_component__WEBPACK_IMPORTED_MODULE_8__["SearchComponent"],
             src_app_search_results_search_results_component__WEBPACK_IMPORTED_MODULE_9__["SearchResultsComponent"],
-            src_app_details_details_component__WEBPACK_IMPORTED_MODULE_23__["DetailsComponent"]
+            src_app_details_details_component__WEBPACK_IMPORTED_MODULE_23__["DetailsComponent"],
+            src_app_slicers_slicers_component__WEBPACK_IMPORTED_MODULE_24__["SlicersComponent"]
         ],
         imports: [
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
@@ -272,6 +294,9 @@ AppModule = __decorate([
             _angular_material_core__WEBPACK_IMPORTED_MODULE_17__["MatOptionModule"],
             _angular_material_select__WEBPACK_IMPORTED_MODULE_18__["MatSelectModule"],
             _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_19__["MatTooltipModule"],
+            _angular_material_expansion__WEBPACK_IMPORTED_MODULE_25__["MatExpansionModule"],
+            _angular_material_list__WEBPACK_IMPORTED_MODULE_26__["MatListModule"],
+            _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_27__["MatGridListModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot([
                 { path: '', component: _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], pathMatch: 'full' },
                 { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"] },
@@ -387,7 +412,7 @@ DetailsComponent = __decorate([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (":host {\n  width: 100%; }\n  :host .movies-search-results-container {\n    margin: 1.5em 3.125em 10em 0em;\n    width: 100%; }\n  :host .movies-search-results-container .movies-search-results-table {\n      width: 100%; }\n  :host .movies-search-container {\n    flex-direction: column;\n    justify-content: center;\n    margin-top: 1%;\n    transition: all .3s linear;\n    align-items: center;\n    display: flex;\n    margin-left: 17em; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXEdVUlVSQUogSEVHREVcXHNvdXJjZVxccmVwb3NcXENvZGluZ1Rhc2tSZXBvXFxDb2RpbmdUYXNrXFxDbGllbnRBcHAvc3JjXFxhcHBcXGhvbWVcXGhvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFXLEVBQUE7RUFEZjtJQUlRLDhCQUE4QjtJQUM5QixXQUFXLEVBQUE7RUFMbkI7TUFRWSxXQUFXLEVBQUE7RUFSdkI7SUFZUSxzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLGNBQWM7SUFDZCwwQkFBMEI7SUFDMUIsbUJBQW1CO0lBQ25CLGFBQWE7SUFDYixpQkFBaUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0e1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcblxyXG4gICAgLm1vdmllcy1zZWFyY2gtcmVzdWx0cy1jb250YWluZXJ7XHJcbiAgICAgICAgbWFyZ2luOiAxLjVlbSAzLjEyNWVtIDEwZW0gMGVtO1xyXG4gICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgIFxyXG4gICAgICAgIC5tb3ZpZXMtc2VhcmNoLXJlc3VsdHMtdGFibGV7XHJcbiAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuICAgIC5tb3ZpZXMtc2VhcmNoLWNvbnRhaW5lcntcclxuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgICAgIG1hcmdpbi10b3A6IDElO1xyXG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAuM3MgbGluZWFyO1xyXG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICAgICAgZGlzcGxheTogZmxleDtcclxuICAgICAgICBtYXJnaW4tbGVmdDogMTdlbTtcclxuICAgIH1cclxufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (":host {\n  width: 100%; }\n  :host .movies-search-results-container {\n    margin: 1.5em 3.125em 10em 0em;\n    width: 100%; }\n  :host .movies-search-results-container .movies-search-results-table {\n      width: 100%; }\n  :host movies-slicer-container {\n    float: left;\n    margin-left: 1em; }\n  :host .movies-search-container {\n    flex-direction: column;\n    justify-content: center;\n    margin-top: 1%;\n    transition: all .3s linear;\n    align-items: center;\n    display: flex;\n    margin-left: 17em; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXEdVUlVSQUogSEVHREVcXHNvdXJjZVxccmVwb3NcXENvZGluZ1Rhc2tSZXBvXFxDb2RpbmdUYXNrXFxDbGllbnRBcHAvc3JjXFxhcHBcXGhvbWVcXGhvbWUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFXLEVBQUE7RUFEZjtJQUlRLDhCQUE4QjtJQUM5QixXQUFXLEVBQUE7RUFMbkI7TUFRWSxXQUFXLEVBQUE7RUFSdkI7SUFZSSxXQUFXO0lBQ1gsZ0JBQWdCLEVBQUE7RUFicEI7SUFnQlEsc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixjQUFjO0lBQ2QsMEJBQTBCO0lBQzFCLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsaUJBQWlCLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG5cclxuICAgIC5tb3ZpZXMtc2VhcmNoLXJlc3VsdHMtY29udGFpbmVye1xyXG4gICAgICAgIG1hcmdpbjogMS41ZW0gMy4xMjVlbSAxMGVtIDBlbTtcclxuICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICBcclxuICAgICAgICAubW92aWVzLXNlYXJjaC1yZXN1bHRzLXRhYmxle1xyXG4gICAgICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICB9XHJcbiAgICB9XHJcbm1vdmllcy1zbGljZXItY29udGFpbmVye1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICBtYXJnaW4tbGVmdDogMWVtO1xyXG59ICAgXHJcbiAgICAubW92aWVzLXNlYXJjaC1jb250YWluZXJ7XHJcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgICAgICBtYXJnaW4tdG9wOiAxJTtcclxuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgLjNzIGxpbmVhcjtcclxuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6IDE3ZW07XHJcbiAgICB9XHJcbn0iXX0= */");
 
 /***/ }),
 
@@ -428,10 +453,19 @@ let HomeComponent = class HomeComponent {
     onSearch(searchTerms) {
         this.movieService.getMoviesList(searchTerms).subscribe(data => {
             this.searchComponent.retrievedMoviesSearch = data.map(x => x.title);
+            this.filteredLanguages = data.map(x => x.language);
+            this.filteredLanguages = this.filteredLanguages.filter((n, i) => this.filteredLanguages.indexOf(n) === i);
+            this.searchResults = data;
             this.searchTableComponent.dataSource.data = data;
         }, (error) => {
             throw (error);
         });
+    }
+    onFilter(filteredLanguage) {
+        if (filteredLanguage.length === 0)
+            return;
+        const filteredDataSource = this.searchResults.filter(x => filteredLanguage.find(y => y === x.language));
+        this.searchTableComponent.dataSource.data = filteredDataSource;
     }
 };
 HomeComponent.ctorParameters = () => [
@@ -592,7 +626,7 @@ let SearchResultsComponent = class SearchResultsComponent {
     constructor(route) {
         this.route = route;
         this.displayedColumns = ['language', 'location', 'plot', 'poster',
-            'soundEffects', 'stills', 'title', 'imdbId', 'listingType', 'imbRating', 'options'];
+            'soundEffects', 'stills', 'title', 'imdbId', 'listingType', 'imdbRating', 'options'];
     }
     ngOnInit() {
         this.dataSource = new _angular_material___WEBPACK_IMPORTED_MODULE_1__["MatTableDataSource"]();
@@ -611,7 +645,7 @@ let SearchResultsComponent = class SearchResultsComponent {
                 case 'title': return this.compareData(a.title, b.title, isDesc);
                 case 'imdbId': return this.compareData(a.imdbId, b.imdbId, isDesc);
                 case 'listingType': return this.compareData(a.listingType, b.listingType, isDesc);
-                case 'imbdRating': return this.compareData(a.imbdRating, b.imbdRating, isDesc);
+                case 'imdbRating': return this.compareData(a.imbdRating, b.imbdRating, isDesc);
                 case 'plot': return this.compareData(a.plot, b.plot, isDesc);
                 case 'soundEffects': return this.compareData(a.plot, b.plot, isDesc);
             }
@@ -808,6 +842,73 @@ MoviesService = __decorate([
     __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"],
         src_app_adapters_movies_get_adapter__WEBPACK_IMPORTED_MODULE_3__["GetMoviesResponseAdapter"]])
 ], MoviesService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/slicers/slicers.component.scss":
+/*!************************************************!*\
+  !*** ./src/app/slicers/slicers.component.scss ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("mat-selection-list {\n  max-height: 20em;\n  overflow: hidden; }\n\n.mat-expansion-panel {\n  width: 290px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2xpY2Vycy9DOlxcVXNlcnNcXEdVUlVSQUogSEVHREVcXHNvdXJjZVxccmVwb3NcXENvZGluZ1Rhc2tSZXBvXFxDb2RpbmdUYXNrXFxDbGllbnRBcHAvc3JjXFxhcHBcXHNsaWNlcnNcXHNsaWNlcnMuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxnQkFBZ0I7RUFDaEIsZ0JBQWdCLEVBQUE7O0FBRXBCO0VBQ0ksWUFBWSxFQUFBIiwiZmlsZSI6InNyYy9hcHAvc2xpY2Vycy9zbGljZXJzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsibWF0LXNlbGVjdGlvbi1saXN0e1xyXG4gICAgbWF4LWhlaWdodDogMjBlbTtcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbn1cclxuLm1hdC1leHBhbnNpb24tcGFuZWx7XHJcbiAgICB3aWR0aDogMjkwcHg7XHJcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/slicers/slicers.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/slicers/slicers.component.ts ***!
+  \**********************************************/
+/*! exports provided: SlicersComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlicersComponent", function() { return SlicersComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+let SlicersComponent = class SlicersComponent {
+    constructor() {
+        this.languagesSlicer = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    onLanguageSelection(event, selectedOption) {
+        const selectedLanguages = selectedOption.selected.map(item => item.value);
+        this.languagesSlicer.emit(selectedLanguages);
+    }
+};
+__decorate([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+    __metadata("design:type", Array)
+], SlicersComponent.prototype, "languages", void 0);
+__decorate([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+    __metadata("design:type", Object)
+], SlicersComponent.prototype, "languagesSlicer", void 0);
+SlicersComponent = __decorate([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+        selector: 'app-slicers',
+        template: __importDefault(__webpack_require__(/*! raw-loader!./slicers.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/slicers/slicers.component.html")).default,
+        styles: [__importDefault(__webpack_require__(/*! ./slicers.component.scss */ "./src/app/slicers/slicers.component.scss")).default]
+    }),
+    __metadata("design:paramtypes", [])
+], SlicersComponent);
 
 
 

@@ -14,6 +14,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatMenuModule } from "@angular/material/menu";
 import { CommonModule } from "@angular/common";
 import { MatInputModule } from "@angular/material/input";
+import { NO_ERRORS_SCHEMA } from "@angular/core";
 
 describe('DetailsComponent', () => {
     let component: DetailsComponent;
@@ -38,6 +39,8 @@ describe('DetailsComponent', () => {
             });
 
         TestBed.configureTestingModule({
+            schemas:[NO_ERRORS_SCHEMA],
+
             imports: [
                 BrowserModule,
                 FormsModule,
