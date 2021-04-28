@@ -37,8 +37,10 @@ export class HomeComponent {
   }
 
   onFilter(filteredLanguage: string[]) {
-    if(filteredLanguage.length === 0)
-      return;
+    if(filteredLanguage.length === 0){
+        this.searchTableComponent.dataSource.data = this.searchResults;
+    return;
+    }
     const filteredDataSource =
       this.searchResults.filter(x => filteredLanguage.find(y => y === x.language));
     this.searchTableComponent.dataSource.data = filteredDataSource;
