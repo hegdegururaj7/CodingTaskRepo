@@ -1,19 +1,19 @@
 import { SearchComponent } from "src/app/search/search.component";
 import { ComponentFixture, async, TestBed } from "@angular/core/testing";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms/forms";
+import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientTestingModule } from "@angular/common/http/testing";
 import { ActivatedRoute } from "@angular/router";
 import { RouterTestingModule } from "@angular/router/testing";
+import { BrowserModule } from "@angular/platform-browser";
 
 import { MoviesService } from "src/app/services/movies.service";
 import { DetailsComponent } from "src/app/details/details.component";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatIconModule } from "@angular/material/icon";
 import { MatMenuModule } from "@angular/material/menu";
-import { CommonModule } from "@angular/common/common";
+import { CommonModule } from "@angular/common";
 import { MatInputModule } from "@angular/material/input";
-import { BrowserModule } from "@angular/platform-browser/platform-browser";
 
 describe('DetailsComponent', () => {
     let component: DetailsComponent;
@@ -26,8 +26,20 @@ describe('DetailsComponent', () => {
                 subscribe: () => ({})
             })
         });
+         let formBuilderStub = () => ({
+            group: object => ({valid:true}),
+              array:  array => ({})
+            });
+
+            let formGroupStub = () => ({
+            valid: Boolean => (true),
+            pristine:Boolean => (false),
+            getRawValue: () => ({})
+            });
+
         TestBed.configureTestingModule({
             imports: [
+                BrowserModule,
                 FormsModule,
                 ReactiveFormsModule,
                 BrowserAnimationsModule,
@@ -35,12 +47,10 @@ describe('DetailsComponent', () => {
                 RouterTestingModule,
                 MatMenuModule,
                 MatIconModule,
-                BrowserModule,
                 BrowserAnimationsModule,
                 ReactiveFormsModule,
                 CommonModule,
                 MatInputModule,
-
                 MatTooltipModule
             ],
             declarations: [DetailsComponent],
@@ -57,6 +67,12 @@ describe('DetailsComponent', () => {
                 },
                 {
                     provide: MoviesService, useClass: mockMovieServiceStub
+                },
+                {
+                    provide: FormBuilder, useClass: formBuilderStub
+                },
+                {
+                    provide: FormGroup, useClass: formBuilderStub
                 }
             ]
         }).compileComponents();
@@ -67,7 +83,10 @@ describe('DetailsComponent', () => {
         fixture.detectChanges();
     }));
     it('should create', () => {
+                fixture.detectChanges();
+fixture.whenStable().then(() => {
         expect(component).toBeTruthy();
+});
     });
 
     it('should make movie service call', () => {

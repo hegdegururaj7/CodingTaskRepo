@@ -1,22 +1,24 @@
 import { SearchComponent } from "src/app/search/search.component";
 import { ComponentFixture, async, TestBed } from "@angular/core/testing";
-import { FormsModule, ReactiveFormsModule } from "@angular/forms/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientTestingModule } from "@angular/common/http/testing";
 import { SearchResultsComponent } from "src/app/search-results/search-results.component";
 import { Movie } from "src/app/models/movie.model";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatInputModule } from "@angular/material/input";
-import { BrowserModule } from "@angular/platform-browser/platform-browser";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatIconModule } from "@angular/material/icon";
 import { RouterTestingModule } from "@angular/router/testing";
-import { CommonModule } from "@angular/common/common";
+import { CommonModule } from "@angular/common";
 import { MatSelectModule } from "@angular/material/select";
 import { MatTableModule } from "@angular/material/table";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatSortModule } from "@angular/material/sort";
 import { MatOptionModule } from "@angular/material/core";
+import { MatExpansionModule } from "@angular/material/expansion";
+import { MatListModule } from "@angular/material/list";
+import { MatGridListModule } from "@angular/material/grid-list";
 
 describe('SearchComponent', () => {
   let component: SearchResultsComponent;
@@ -53,7 +55,6 @@ describe('SearchComponent', () => {
         RouterTestingModule,
         MatMenuModule,
         MatIconModule,
-        BrowserModule,
         BrowserAnimationsModule,
         ReactiveFormsModule,
         CommonModule,
@@ -64,9 +65,11 @@ describe('SearchComponent', () => {
         MatOptionModule,
         MatSelectModule,
         MatTooltipModule,
-
+        MatExpansionModule,
+        MatListModule,
+        MatGridListModule
       ],
-      declarations: [SearchComponent]
+      declarations: [SearchResultsComponent]
     }).compileComponents();
   }));
   beforeEach((() => {
