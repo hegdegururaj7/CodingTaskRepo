@@ -25,6 +25,3 @@ https://localhost:4200/details/{movieId} --> Fetches details for selected movie
 There is a navigation to Home as well
 
 
-Due To time constraint could not cover filtering either by language or location (Implementation was using slicers as a component)
-Please ignore the default template files(example: WeatherForecast Controller, WeatherForecast.cs)
-
